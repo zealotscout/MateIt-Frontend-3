@@ -1,0 +1,253 @@
+html
+
+	head
+		include partials/head.jade
+		//--
+			script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+			script(type='text/javascript', src='js/bootstrap.min.js') 
+			script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
+			link(rel='stylesheet',href='/css/style.css')
+			link(rel='stylesheet',href='/css/bootstrap.min.css')
+		//--link(rel="stylesheet",href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css")
+
+		
+		link(rel="stylesheet",src="/css/bootflat.css")
+		link(rel="stylesheet",src="/css/simple-sidebar.css")
+		link(rel="stylesheet",src= "/css/font-awesome.min.css")
+		link(rel="stylesheet",src= "/css/font-awesome.css")
+
+
+		script(type="text/javascript",src="http://code.jquery.com/jquery.min.js")
+		script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
+
+	body#property-list
+		include partials/header.jade
+
+
+			
+		div#wrapper
+
+			div#sidebar-wrapper
+				div.row
+					a(href='#')
+						i.fa.fa-users#sidebar
+					//-div.arrow-left		
+
+				div.row
+					a(href='#')
+						i.fa.fa-building-o#sidebar
+					img(src="imgs/triangle.png")#triangle.property
+			div#sidebar-wrapper2		
+			div.row.content
+				div.col-md-3
+					div.navbar
+						ol.breadcrumb#property-list
+							li.active 
+								a(href='#') admin
+							li
+								a(href='#') Propiedades
+				div.col-md-4
+					button(type="button",data-target="#myModal4",data-toggle="modal").btn.btn-info#property-list
+						i.fa.fa-building-o    
+							span  Agregar Propiedad	
+
+				div.col-md-3	
+					div.input-group#property-list
+						span.input-group-addon.property-list 
+							i.fa.fa-search
+						input(type="text").form-control(placeholder="Busqueda")
+				
+
+				
+				div.col-md-12
+					div.modal.fade#myModal4(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+											div.modal-dialog
+												div.modal-content	
+													div.modal-header
+														button.close(data-dismiss="modal",aria-hidden="true") x
+														h5.modal-title Editar Propiedad
+														div.modal-body
+															div.row
+																div.col-xs-6
+																	label Titlo de Propiedad
+																	input(type="text",placeholder="Titulo").form-control
+																div.col-xs-6
+																	label Direccion
+																	input(type="text",placeholder="Direccion").form-control
+															div.row
+																div.col-xs-6
+																	label Pais
+																	br
+																	div.btn-group#find-page
+																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Pais
+																			span.caret
+																		ul.dropdown-menu(role="menu")
+																			li
+																				a(href='#') action 1
+																				a(href="#") action 2 
+
+																div.col-xs-6
+																	label Capacidad
+																	input(type="text",placeholder="X Personas").form-control
+															div.row		
+																div.col-xs-6
+																	label Descripcion
+																	textarea(rows="3",placeholder="insertar descripcion aqui de su propiedad").form-control		
+																
+															div.modal-footer#property-list
+																div.col-xs-8
+																	button.btn.btn-success#property-list
+																		i.fa.fa-building-o  Crear Propiedad
+				div.col-md-2														
+				
+			div.row.content
+				div.col-md-11
+					div.panel.panel-primary#property-list
+						table.table
+							thead
+								tr
+									th # 
+									th nombre
+									th descripcion
+									th ubicacion
+									th duenio
+									th Acciones
+							tbody
+								tr
+									td 1
+									td Lujoso penthouse Modal test line
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td 
+										button(type="button",data-target="#myModal",data-toggle="modal").btn.btn-primary.btn-circle#property-list
+											i.fa.fa-pencil 
+										div.modal.fade#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+											div.modal-dialog
+												div.modal-content	
+													div.modal-header
+														button.close(data-dismiss="modal",aria-hidden="true") x
+														h5.modal-title Editar Propiedad
+														div.modal-body
+															div.row
+																div.col-xs-6
+																	label Titlo de Anuncio
+																	input(type="text",placeholder="Titulo").form-control
+																div.col-xs-6
+																	label Direccion
+																	input(type="text",placeholder="Direccion").form-control
+															div.row
+																div.col-xs-6
+																	label Pais
+																	br
+																	div.btn-group#find-page
+																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Panama
+																			span.caret
+																		ul.dropdown-menu(role="menu")
+																			li
+																				a(href='#') Panama
+																				a(href="#") Italia 
+
+																div.col-xs-6
+																	label Tipo de propiedad
+																	div.btn-group#find-page
+																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") 
+																			i.fa.fa-home    Casa
+																			span.caret
+																		ul.dropdown-menu(role="menu")
+																			li
+																				a(href='#') 
+																					i.fa.fa-home    Casa
+																				a(href="#") 
+																					i.fa.fa-building-o    Apartamento
+																				a(href="#") 
+																					i.fa.fa-th   Otro
+															div.row		
+																div.col-xs-6
+																	label Capacidad
+																	input(type="text",placeholder="X personas").form-control		
+																div.col-xs-6
+																	label Descripcion
+																	textarea(rows="3",placeholder="insertar descripcion aqui de su propiedad").form-control
+															div.modal-footer
+																div.col-xs-8
+																	button.btn.btn-success#property-list
+																		i.fa.fa-pencil  Editar Propiedad
+
+
+
+										button(type="button",data-target="#myModal1",data-toggle="modal").btn.btn-primary.btn-circle#property-list
+											i.fa.fa-trash-o
+										div.modal.fade#myModal1(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+											div.modal-dialog
+												div.modal-content	
+													div.modal-header
+														button.close(data-dismiss="modal",aria-hidden="true") x
+														h5.modal-title Eliminar Propiedad
+														div.modal-body
+															div.row
+																p Estas seguro que deseas eliminar la Propiedad #Propiedad, para eliminarla coloca tu contrasenia y presiona eliminar Propiedad
+															div.row	
+																div.col-xs-3
+																label 
+																	input(type="text",placeholder="Password").form-control
+															div.modal-footer
+																div.col-xs-8
+																	a(href="#").btn.btn-danger#property-list 
+																		i.fa.fa-trash-o Eliminar Propiedad
+								tr
+									td 2
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td 
+										button.btn.btn-primary.btn-circle#property-list
+											i.fa.fa-pencil
+										button.btn.btn-primary.btn-circle#property-list
+											i.fa.fa-trash-o
+
+								tr
+									td 3
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td 
+										button.btn.btn-primary.btn-circle#property-list
+											i.fa.fa-pencil
+										button.btn.btn-primary.btn-circle#property-list
+											i.fa.fa-trash-o
+								tr
+									td 4
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td  Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td Lujoso penthouse ubicado en la zona mas privilegia del pais
+									td 
+										button.btn.btn-primary.btn-circle#property-list
+											i.fa.fa-pencil
+										button.btn.btn-primary.btn-circle#property-list
+											i.fa.fa-trash-o
+
+						div.panel.panel-footer
+							div.line-separator.property-list
+							div.col-md-4
+							div.pagination#property-list
+								li
+									a(href="#") prev	
+								li
+									a(href="#") 1
+								li	
+									a(href="#") 2
+								li 
+									a(href="#") 3
+								li
+									a(href="#") 4
+								li.disabled
+									a(href="#") 5	
+								li
+									a(href="#") Next	
+
+
+

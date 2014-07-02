@@ -1,0 +1,27 @@
+{
+  "name": "Thesis Web UI Design",
+  "version": "1.0",
+  "authors": [
+    "Rolando Perez <me@rolilink.com>"
+  ],
+  "description": "The UI Design of my thesis",
+  "main": "index.html",
+  "keywords": [
+    "ui",
+    "thesis",
+    "mateit"
+  ],
+  "license": "MIT",
+  "homepage": "www.rolilink.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-stylus": "~3.1.1"
+  }
+}

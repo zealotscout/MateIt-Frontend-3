@@ -1,0 +1,87 @@
+html
+
+	head
+		include partials/head.jade
+		link(rel="stylesheet",src="/css/bootflat.css")
+		link(rel="stylesheet",src= "/css/font-awesome.min.css")
+		link(rel="stylesheet",src= "/css/font-awesome.css")
+		//--link(rel="stylesheet",href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css")
+		script(type="text/javascript",src="http://code.jquery.com/jquery.min.js")
+		script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
+	body
+		include partials/header.jade
+		
+
+
+		div.col-md-12
+			
+			div.row
+				
+				div.col-md-7
+					div.jumbotron.map
+						div.jumbotron-photo#map
+							img(src="/imgs/map3.png")
+						
+				div.col-md-3#rightside		
+
+					div.jumbotron#find-page
+						div.row	
+							span Tipo de propiedad 
+							br	
+							
+							div.btn-group#find-page
+								button(data-toggle="dropdown").btn.btn-default.dropdown-toggle 
+									i.fa.fa-building-o   Apartamento
+									span.caret
+								ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
+									li
+										a(href='#') 
+											i.fa.fa-building 		Apartamento
+										a(href='#') 		
+											i.fa.fa-home		Casa
+										a(href='#') 
+											i.fa.fa-th 		Otro
+						div.row					
+							span Tipo de cuarto		
+							br	
+							div.btn-group#find-page
+								button(data-toggle="dropdown").btn.btn-default.dropdown-toggle 
+									i.fa.fa-users    Compartido
+									span.caret
+								ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
+									li
+										a(href='#') 
+										i.fa.fa-user 		Privado
+										a(href='#') 
+										i.fa.fa-users		Compartido
+						div.row				
+							span Precio
+							br
+							div.btn-group#add-property
+							div.input-group
+								span.input-group-addon 
+									strong $
+								input(type="text").form-control(placeholder="10")
+
+					div.jumbotron.find-page
+						div.jumbotron-photo
+							img.img-rounded(src="/imgs/fancy.jpg")
+							div.black
+							br	
+							h5 Beautiful private room near via brasil
+						div.jumbotron-contents.find-page
+							div.row.find-page-status-icons
+								i.fa.fa-usd 	
+									span 300      
+								i.fa.fa-home  
+									span 	Casa
+								i.fa.fa-users
+									span  Compartido
+							
+							br
+							p Casa ubicada en la zona mas privelegiada de la cuidad, disfrute de hermosas vistas del horizonte mientras acarece el sol durante las atardeceres con esta hermosa ubicacion 
+							div.col-md-6
+
+							button.btn.btn-info 
+								i.fa.fa-eye.find-page   Ver mas
+					

@@ -1,0 +1,164 @@
+html
+
+	head
+		include partials/head.jade
+		//--
+			script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+			script(type='text/javascript', src='js/bootstrap.min.js') 
+			script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
+			link(rel='stylesheet',href='/css/style.css')
+			link(rel='stylesheet',href='/css/bootstrap.min.css')
+		//--link(rel="stylesheet",href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css")
+
+		
+		link(rel="stylesheet",src="/css/bootflat.css")
+		link(rel="stylesheet",src="/css/simple-sidebar.css")
+		link(rel="stylesheet",src= "/css/font-awesome.min.css")
+		link(rel="stylesheet",src= "/css/font-awesome.css")
+
+
+		script(type="text/javascript",src="http://code.jquery.com/jquery.min.js")
+		script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
+
+	bodyf
+		include partials/header.jade
+
+
+			
+		div#wrapper
+
+			div#sidebar-wrapper
+				div.row
+					a(href='#')
+						i.fa.fa-user#sidebar
+					//-div.arrow-left		
+
+				div.row
+					a(href='#')
+						i.fa.fa-building-o#sidebar
+					img(src="imgs/triangle.png")#triangle.property
+			div#sidebar-wrapper2
+			div.row.add-property#add-property	
+				div.col-md-4	
+					div.navbar.overcontent
+						ol.breadcrumb
+							li.active
+								a(href='#') 
+								span Admin
+							li
+								a(href='#') Propiedades
+							li
+								a(href='#') Agregar
+
+								
+				div.col-md-8
+			div.col-md-12.content		
+				div.row.add-property#inputboxes
+					div.col-md-5
+						p Titulo del Clasificado
+						input(type="text").form-control(placeholder="Apartamento compartido en el dorado").add-property.left
+					div.col-md-7
+						p Descripcion	
+						textarea(rows="2").form-control(placeholder="Lugar tranquilo ubicado en lo mas centro de la cuidad de panama")#descripcion
+				div.row.add-property#property-attributes
+					div.col-md-4
+						p Tipo de Propiedad
+						div.btn-group#add-property
+							button(data-toggle="dropdown").btn.btn-default.dropdown-toggle 
+								i.fa.fa-building-o	Apartamento
+								span.caret
+							ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
+								li
+									a(href='#') 
+										i.fa.fa-building-o			Apartamento
+									a(href='#') 
+										i.fa.fa-home			Casa
+									a(href='#') 
+										i.fa.fa-th 		Otro
+
+					div.col-md-4
+						p Tipo de cuarto
+						div.btn-group#add-property
+							button(data-toggle="dropdown").btn.btn-default.dropdown-toggle 
+								i.fa.fa-users			Compartido
+								span.caret
+							ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
+								li
+									a(href='#') 
+										i.fa.fa-user			Privado
+									a(href='#')
+										i.fa.fa-users			Compartido
+					div.col-md-4
+						p  Precio
+						div.btn-group#add-property
+							div.input-group
+								span.input-group-addon 
+									strong $
+								input(type="text").form-control(placeholder="10")
+				div.row.add-property
+					div.col-md-6
+						a.btn.btn-primary(href='')#fotos  
+										i.fa.fa-camera   
+										this   Agregar Fotos 
+					div.col-md-1
+
+						span Ubicacion
+				div.row
+					div.col-md-6
+						div.jumbotron	
+
+							div.jumbotron-photo
+								img(src="/imgs/apartment2.jpg")	
+								
+
+							div#picture
+
+
+					
+					div.col-md-6
+						
+						div.location
+							br
+							div.col-md-5
+							input(type ="text").form-control(placeholder="Plaza Centenario")#location
+							div.jumbotron	
+								div.jumbotron-photo	
+									
+									img(src="/imgs/map3.png")
+							
+				div.row.add-property
+					div.col-md-4.roommatebox
+								
+						p Roommates (Ingresar Correo)
+						input(type="text").form-control(placeholder="roommates").add-property
+															
+						a.btn.btn-primary(href='#')#roommates
+							i.fa.fa-envelope 
+							this   Agregar Roommate
+		
+					div.col-md-8
+						textarea(rows="3").form-control(placeholder="").whitespace
+
+				div.row.add-property
+					div.col-md-9
+					div.col-md-1
+						div.overlay
+
+							button.btn.btn-info#add-property 
+								i.fa.fa-building-o 
+								this 			Agregar Propiedad
+
+							
+
+
+						
+			
+			
+			
+			
+
+
+			
+		
+
+					

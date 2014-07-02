@@ -1,0 +1,127 @@
+html
+
+	head
+		include partials/head.jade
+		//--
+			script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+			script(type='text/javascript', src='js/bootstrap.min.js') 
+			script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js')
+			link(rel='stylesheet',href='/css/style.css')
+			link(rel='stylesheet',href='/css/bootstrap.min.css')
+		//--link(rel="stylesheet",href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css")
+
+		
+		link(rel="stylesheet",src="/css/bootflat.css")
+		link(rel="stylesheet",src="/css/simple-sidebar.css")
+		link(rel="stylesheet",src= "/css/font-awesome.min.css")
+		link(rel="stylesheet",src= "/css/font-awesome.css")
+
+
+		script(type="text/javascript",src="http://code.jquery.com/jquery.min.js")
+		script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
+
+	body
+		include partials/header.jade
+
+
+			
+		div#wrapper
+
+			div#sidebar-wrapper
+				div.row
+					a(href='#')
+						i.fa.fa-users#sidebar
+					img(src="imgs/triangle.png")#triangle.user
+					//-div.arrow-left		
+
+				div.row
+					a(href='#')
+						i.fa.fa-building-o#sidebar
+			div#sidebar-wrapper2				
+			div.row.user-dashboard
+
+				div.col-md-4	
+					div.navbar.overcontent
+						ol.breadcrumb
+							li.active 
+								a(href='#') 
+								span Panel
+							li
+								a(href='#') Usuario 
+							li
+								a(href='#') Settings
+				
+				div.col-md-4
+					button.btn.btn-info#user-dashboard
+						i.fa.fa-check    Guardar Cambios
+
+			div.col-md-12.content#user-dashboard
+				div.row#perfil
+					div.row#user-dashboard-overhead
+						div.col-md-1
+							h5
+								span	
+									i.fa.fa-user.circle     
+						div.col-md-9
+							h5#user-dashboard-headers Perfil 
+							div.line-separator
+
+					
+
+
+
+					div.col-md-3
+
+						div.jumbotron#user-dashboard-profile
+							div.jumbotron-photo
+								img(src="imgs/guts.jpg")
+							div.jumbotron.contents#user-dashboard-profile
+								a.btn.btn-primary(href='')#fotos-user-dashboard 
+									i.fa.fa-camera    Cambiar Foto
+					div.col-md-4.left-input
+						span Nombre de Usuario
+						
+						input(type="text").form-control(placeholder="Zealotscout")
+						span Nombre Completo
+						
+						input(type="text").form-control(placeholder="Zealot Scout")
+						span Pais
+						br
+						
+						div.btn-group#find-page
+							button(data-toggle="dropdown").btn.btn-default.dropdown-toggle Panama
+								span.caret
+							ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
+								li
+									a(href='#') Panama
+									a(href='#') Italia
+									a(href='#') Estados Unidos
+					div.col-md-3.right-input
+
+						span Correo
+						
+						input(type="text").form-control(placeholder="Zealotuscout@gmail.com")
+						span Fecha de Nacimiento
+						
+						input(type="text").form-control(placeholder="12/9/1989")
+						span Contrasenia
+						
+						button.btn.btn-danger(href='#')#resetear 
+							i.fa.fa-pencil    Resetear contrasenia 
+				
+
+				div.row#cuentas-sociales
+					div.row#user-dashboard-overhead
+						div.col-md-1
+							h5
+								span	
+									i.fa.fa-user.circle     
+						div.col-md-9
+							h5#user-dashboard-headers Cuentas Sociales
+							div.line-separator
+					div.row
+						div.col-md-1
+							a.btn.btn-primary(href='')#conectar
+								i.fa.fa-facebook-square   
+									span 		Conectar con Facebook			
+
