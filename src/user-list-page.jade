@@ -29,251 +29,251 @@ html
 		div#wrapper
 
 			div#sidebar-wrapper
-				div.row
-					a(href='#')
-						i.fa.fa-users#sidebar
-					img(src="imgs/triangle.png")#triangle.user
-					//-div.arrow-left		
+					div.row
+						a(href='#')
+							i.fa.fa-users#sidebar
+						img(src="imgs/triangle.png")#triangle.user
+						//-div.arrow-left		
 
+					div.row
+						a(href='#')
+							i.fa.fa-building-o#sidebar
+				div#sidebar-wrapper2			
+			div.row.content		
 				div.row
-					a(href='#')
-						i.fa.fa-building-o#sidebar
-			div#sidebar-wrapper2				
-			div.row
-				div.col-md-4	
-					div.navbar
-						ol.breadcrumb
-							li 
-								a(href='#') admin
-							li
-								a(href='#') Users
+					div.col-md-4	
+						div.navbar
+							ol.breadcrumb#property-list
+								li.active 
+									a(href='#') 
+									span admin
+								li
+									a(href='#') Users
+							
+					div.col-md-2
+						button(type="button",data-target="#myModal4",data-toggle="modal").btn.btn-info#user-dashboard
+							i.fa.fa-user    
+								span  Agregar Usuario
+						div.modal.fade#myModal4(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+												div.modal-dialog
+													div.modal-content	
+														div.modal-header
+															button.close(data-dismiss="modal",aria-hidden="true") x
+															h5.modal-title Editar Usuario
+															div.modal-body
+																div.row
+																	div.col-xs-6
+																		label#modals Nombre de Usuario
+																		input(type="text",placeholder="Usuario").form-control
+																	div.col-xs-6
+																		label#modals Nombre Completo
+																		input(type="text",placeholder="Nombre completo").form-control
+																div.row
+																	div.col-xs-6
+																		label#modals Pais
+																		br
+																		div.btn-group#find-page
+																			button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Pais
+																				span.caret
+																			ul.dropdown-menu(role="menu")
+																				li
+																					a(href='#') action 1
+																					a(href="#") action 2 
+
+																	div.col-xs-6
+																		label#modals Fecha de Nacimiento
+																		input(type="text",placeholder="dd/mm/yyyy").form-control
+																div.row		
+																	div.col-xs-6
+																		label#modals Correo
+																		input(type="text",placeholder="utube@hotmail.com").form-control		
+																	div.col-xs-6
+																		p Enviaremos una contrasenia autogenerada al correo proporcionado
+																div.modal-footer
+																	div.col-xs-8
+																		button.btn.btn-success#property-list
+																			i.fa.fa-user  Crear Usuario	
+					div.col-md-2	
 						
-				div.col-md-2
-					button(type="button",data-target="#myModal4",data-toggle="modal").btn.btn-info#user-dashboard
-						i.fa.fa-user    
-							span  Agregar Usuario
-					div.modal.fade#myModal4(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
-											div.modal-dialog
-												div.modal-content	
-													div.modal-header
-														button.close(data-dismiss="modal",aria-hidden="true") x
-														h5.modal-title Editar Usuario
-														div.modal-body
-															div.row
-																div.col-xs-6
-																	label Nombre de Usuario
-																	input(type="text",placeholder="Usuario").form-control
-																div.col-xs-6
-																	label Nombre Completo
-																	input(type="text",placeholder="Nombre completo").form-control
-															div.row
-																div.col-xs-6
-																	label Pais
-																	br
-																	div.btn-group#find-page
-																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Pais
-																			span.caret
-																		ul.dropdown-menu(role="menu")
-																			li
-																				a(href='#') action 1
-																				a(href="#") action 2 
-
-																div.col-xs-6
-																	label Fecha de Nacimiento
-																	input(type="text",placeholder="dd/mm/yyyy").form-control
-															div.row		
-																div.col-xs-6
-																	label Correo
-																	input(type="text",placeholder="utube@hotmail.com").form-control		
-																div.col-xs-6
-																	p Enviaremos una contrasenia autogenerada al correo proporcionado
-															div.modal-footer
-																div.col-xs-6
-																	button.btn.btn-success
-																		i.fa.fa-user  Crear Usuario	
-				div.col-md-2	
-					
-					
-
-			div.row
-				div.col-md-11
-					div.panel.panel-primary
 						
 
-						table.table
-							thead
+				div.row
+					div.col-md-11
+						div.panel.panel-primary#property-list
+							table.table.table-striped
+								thead
+										tr
+											th # 
+											th Username
+											th Rol
+											th Activo
+											th Ultima Sesion
+											th pais
+											th Acciones
+								tbody
 									tr
-										th # 
-										th Username
-										th Rol
-										th Activo
-										th Ultima Sesion
-										th pais
-										th Acciones
-							tbody
-								tr
-									td 1
-									td Rolilink
-									td Admin
-									td 
-										div.circle#status-normal
-									td 6/5/2014
-									td Panama
-									td 
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-pencil 
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-trash-o
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-ban
-								tr
-									td 2
-									td zealotscout-Modal Line
-									td Admin
-									td 
-										div.circle#status-normal
-									td 6/5/2014
-									td Panama
-									td 
-										button(type="button",data-target="#myModal",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-pencil 
-										div.modal.fade#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
-											div.modal-dialog
-												div.modal-content	
-													div.modal-header
-														button.close(data-dismiss="modal",aria-hidden="true") x
-														h5.modal-title Editar Usuario
-														div.modal-body
-															div.row
-																div.col-xs-6
-																	label Nombre de Usuario
-																	input(type="text",placeholder="Usuario").form-control
-																div.col-xs-6
-																	label Nombre Completo
-																	input(type="text",placeholder="Nombre completo").form-control
-															div.row
-																div.col-xs-6
-																	label Pais 
-																	br
-																	div.btn-group#find-page
-																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Pais
-																			span.caret
-																		ul.dropdown-menu(role="menu")
-																			li
-																				a(href='#') action 1
-																				a(href="#") action 2 
+										td 1
+										td Rolilink
+										td Admin
+										td 
+											div.circle#status-normal
+										td 6/5/2014
+										td Panama
+										td 
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-pencil 
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-trash-o
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-ban
+									tr
+										td 2
+										td zealotscout-Modal Line
+										td Admin
+										td 
+											div.circle#status-normal
+										td 6/5/2014
+										td Panama
+										td 
+											button(type="button",data-target="#myModal",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-pencil 
+											div.modal.fade#myModal(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+												div.modal-dialog
+													div.modal-content	
+														div.modal-header
+															button.close(data-dismiss="modal",aria-hidden="true") x
+															h5.modal-title Editar Usuario
+															div.modal-body
+																div.row
+																	div.col-xs-6
+																		label#modals Nombre de Usuario
+																		input(type="text",placeholder="Usuario").form-control
+																	div.col-xs-6
+																		label#modals Nombre Completo
+																		input(type="text",placeholder="Nombre completo").form-control
+																div.row
+																	div.col-xs-6
+																		label#modals Pais 
+																		br
+																		div.btn-group#find-page
+																			button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Pais
+																				span.caret
+																			ul.dropdown-menu(role="menu")
+																				li
+																					a(href='#') action 1
+																					a(href="#") action 2 
 
-																div.col-xs-6
-																	label Fecha de Nacimiento
-																	input(type="text",placeholder="dd/mm/yyyy").form-control
-															div.row		
-																div.col-xs-6
-																	label Correo
-																	input(type="text",placeholder="utube@hotmail.com").form-control		
-																div.col-xs-6
-																	label Contrasenia
-																	a(href="#").btn.btn-danger 
-																		i.fa.fa-pencil Resettear contrasenia
-															div.modal-footer
-																div.col-xs-6
-																	button.btn.btn-success
-																		i.fa.fa-pencil  Editar Usuario
+																	div.col-xs-6
+																		label#modals Fecha de Nacimiento
+																		input(type="text",placeholder="dd/mm/yyyy").form-control
+																div.row		
+																	div.col-xs-6
+																		label#modals Correo
+																		input(type="text",placeholder="utube@hotmail.com").form-control		
+																	div.col-xs-6
+																		label#modals Contrasenia
+																		a(href="#").btn.btn-danger#property-list 
+																			i.fa.fa-pencil Resettear contrasenia
+																div.modal-footer
+																	div.col-xs-8
+																		button.btn.btn-success#property-list
+																			i.fa.fa-pencil  Editar Usuario
 
-										button(type="button",data-target="#myModal2",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-trash-o
-										div.modal.fade#myModal2(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
-											div.modal-dialog
-												div.modal-content	
-													div.modal-header
-														button.close(data-dismiss="modal",aria-hidden="true") x
-														h5.modal-title Eliminar Usuario
-														div.modal-body
-															div.row
-																p Estas seguro que deseas eliminar la cuenta : #name, para eliminarla coloca tu contrasenia y presiona eliminar usuario
-															div.row	
-																div.col-xs-3
-																label 
-																	input(type="text",placeholder="Password").form-control
-															div.modal-footer
-																div.col-xs-6
-																	a(href="#").btn.btn-danger 
-																		i.fa.fa-trash-o Eliminar Usuario
-										button(type="button",data-target="#myModal3",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-ban
-										div.modal.fade#myModal3(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
-											div.modal-dialog
-												div.modal-content	
-													div.modal-header
-														button.close(data-dismiss="modal",aria-hidden="true") x
-														h5.modal-title Bloquear Usuario
-														div.modal-body
-															div.row
-
-																p Estas seguro que deseas bloquear la cuenta #name para bloquearla coloca tu contrasenia y un motiva de bloqueo, luego presiona bloquear usuario
-															div.row	
-																div.col-xs-1
+											button(type="button",data-target="#myModal2",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-trash-o
+											div.modal.fade#myModal2(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+												div.modal-dialog
+													div.modal-content	
+														div.modal-header
+															button.close(data-dismiss="modal",aria-hidden="true") x
+															h5.modal-title Eliminar Usuario
+															div.modal-body
+																div.row
+																	p Estas seguro que deseas eliminar la cuenta : #name, para eliminarla coloca tu contrasenia y presiona eliminar usuario
+																div.row	
 																div.col-xs-4
-																	textarea(rows="3",placeholder="Razon").form-control
-															div.row	
+																input(type="text",placeholder="Password").form-control#modal-input
+																div.modal-footer
+																	div.col-xs-8
+																		a(href="#").btn.btn-danger#property-list 
+																			i.fa.fa-trash-o Eliminar Usuario
+											button(type="button",data-target="#myModal3",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-ban
+											div.modal.fade#myModal3(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
+												div.modal-dialog
+													div.modal-content	
+														div.modal-header
+															button.close(data-dismiss="modal",aria-hidden="true") x
+															h5.modal-title Bloquear Usuario
+															div.modal-body
+																div.row
+
+																	p Estas seguro que deseas bloquear la cuenta #name para bloquearla coloca tu contrasenia y un motiva de bloqueo, luego presiona bloquear usuario
+																div.row	
+																div.col-xs-2
+																textarea(rows="2",placeholder="Razon").form-control#modal-textarea
+																div.row	
+																
 																br
-																div.col-xs-1
 																div.col-xs-3
-																label 
-																	input(type="text",placeholder="Password").form-control
-															div.modal-footer
-																div.col-xs-3
-																div.col-xs-6
-																	a(href="#").btn.btn-danger 
-																		i.fa.fa-trash-o Bloquear Usuario		
-								tr
-									td 3
-									td rolilink
-									td Owner
-									td 
-										div.circle#status-normal
-									td 6/5/2014
-									td Panama
-									td 
-										button(type="button").btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-pencil
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-trash-o
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-ban
-								tr
-									td 4
-									td Zealotscout
-									td Owner
-									td 
-										a(href='#',rel="popover",data-content="Presunto robo de cuenta etc etc",data-trigger="hover",data-original-title="Razon:")#pop 
-											div.circle#status-warning
-											script
-												$(function(){
-													$('#pop').popover();
-													});
-									td 6/5/2014
-									td Panama
-									td 
-										button(type="button").btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-pencil
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-trash-o
-										button.btn.btn-primary.btn-circle#user-list 
-											i.fa.fa-ban
-						div.panel.panel-footer
-							div.pagination#user-list
-								li
-									a(href="#") prev	
-								li
-									a(href="#") 1
-								li	
-									a(href="#") 2
-								li 
-									a(href="#") 3
-								li
-									a(href="#") 4
-								li.disabled
-									a(href="#") 5	
-								li
-									a(href="#") Next	
-		
+																input(type="text",placeholder="Password").form-control
+
+																div.modal-footer
+																	
+																	div.col-xs-8
+																		a(href="#").btn.btn-danger#property-list
+																			i.fa.fa-trash-o Bloquear Usuario		
+									tr
+										td 3
+										td rolilink
+										td Owner
+										td 
+											div.circle#status-normal
+										td 6/5/2014
+										td Panama
+										td 
+											button(type="button").btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-pencil
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-trash-o
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-ban
+									tr
+										td 4
+										td Zealotscout
+										td Owner
+										td 
+											a(href='#',rel="popover",data-content="Presunto robo de cuenta etc etc",data-trigger="hover",data-original-title="Razon:")#pop 
+												div.circle#status-warning
+												script
+													$(function(){
+														$('#pop').popover();
+														});
+										td 6/5/2014
+										td Panama
+										td 
+											button(type="button").btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-pencil
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-trash-o
+											button.btn.btn-primary.btn-circle#user-list 
+												i.fa.fa-ban
+							div.panel.panel-footer
+								
+								div.col-md-4
+								div.pagination#property-list
+									li
+										a(href="#") prev	
+									li
+										a(href="#") 1
+									li	
+										a(href="#") 2
+									li 
+										a(href="#") 3
+									li
+										a(href="#") 4
+									li.disabled
+										a(href="#") 5	
+									li
+										a(href="#") Next	
+			

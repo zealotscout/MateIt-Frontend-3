@@ -83,6 +83,18 @@ div.jumbotron
 	height 34px
 	margin-left 10
 
+.form-control#modal-textarea
+	width 291
+	height 50px
+	margin-left 10
+	position relative
+	right -13
+.form-control#modal-input
+	width 291
+	height 50px
+	margin-left 10
+	position relative
+	right 68
 div.btn-group#find-page
 	.btn
 		width 240px
@@ -233,11 +245,11 @@ div.row#perfil
 	.active
 		color #64Aeca
 .form-control.whitespace
-	width 523
+	width 619
 	position relative
 	right -31
 .form-control#descripcion
-	width 475
+	width 548
 .form-control.add-property
 	height 34px
 	margin-left 3px
@@ -325,12 +337,12 @@ a.btn.btn-primary
 	border-color #218EB6
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 100%
+	background-size 114%
 	background-color #218EB6
 a.btn.btn-danger	
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 100%
+	background-size 114%
 
 
 a.btn.btn-primary#fotos
@@ -542,7 +554,7 @@ div.jumbotron.contents.user-rating
 .btn#property-list
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 100%
+	background-size 114%
 
 .modal-footer#property-list
 	margin-top -10px
@@ -576,6 +588,15 @@ button.btn.btn-info#property-list
 	border-radius 42px
 body#property-list
 	color #A5A6A8
+.table
+	thead
+		tr 
+			th 
+				padding-left 30
+	tbody
+		tr
+			td 
+				padding-left 30
 .panel#property-list
 	.table:first-child
 		tr:first-child
@@ -679,11 +700,18 @@ a.btn.btn-primary#conectar
 
 div.row.user-dashboard
 	padding 0px
-.line-separator.property-list
+.line-separator#property-list
 	height 1px
 	background #E8E4E5
 	border-bottom 2px solid #D7D7DB
 
+.line-separators
+	height 1px
+	background #E8E4E5
+	border-bottom 2px solid #D7D7DB
+	
+	margin-left -35
+	margin-top -10
 
 img#triangle.user
 	height 70px
@@ -724,11 +752,16 @@ button.btn.btn-info#user-dashboard
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
 	background-size 100%
+	background-color #90b64e
 	i.fa.fa-user
 		font-size 1.05em
 //end of user-dashboard
 
 //user-list-page
+label#modals
+	margin-left 9
+.modal-title
+	margin-left 24
 .panel-heading#user-list
 	padding 0px
 	border-bottom none	
@@ -757,7 +790,8 @@ div.pagination
   border-radius 50%
   background-color #31AAC7
   text-align center
-  color white			
+  color white		
+
 .btn-circle#user-list 
   width 30px
   height 30px
@@ -766,8 +800,11 @@ div.pagination
   font-size 12px
   line-height 1.428571429
   border-radius 30px
+
+
 .btn.btn-primary.btn-circle#user-list
-	background-color #999BA8
+	background-color #53545a
+
 .btn.btn-primary.btn-circle#user-list:hover
 	background-color #C6C7CF
 	
@@ -794,6 +831,8 @@ table
 				background-color rgb(44,176,214)
 				color white
 //start of property list
+.btn-primary
+	border-color transparent
 .panel-heading#property-list
 	padding 0px
 	border-bottom none	
@@ -807,6 +846,7 @@ table
   border-radius 30px
 .btn.btn-primary.btn-circle#property-list
 	background-color #53545a
+	border-color none
 	
 .btn.btn-primary.btn-circle#property-list:hover
 	background-color #C6C7CF

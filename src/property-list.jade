@@ -41,10 +41,11 @@ html
 			div.row.content
 				div.col-md-3
 					div.navbar
-						ol.breadcrumb#property-list
+						ol.breadcrumb
 							li.active 
-								a(href='#') admin
-							li
+								a(href='#') 
+								span admin
+							li.active
 								a(href='#') Propiedades
 				div.col-md-4
 					button(type="button",data-target="#myModal4",data-toggle="modal").btn.btn-info#property-list
@@ -69,14 +70,14 @@ html
 														div.modal-body
 															div.row
 																div.col-xs-6
-																	label Titlo de Propiedad
+																	label#modals Titlo de Propiedad
 																	input(type="text",placeholder="Titulo").form-control
 																div.col-xs-6
-																	label Direccion
+																	label#modals Direccion
 																	input(type="text",placeholder="Direccion").form-control
 															div.row
 																div.col-xs-6
-																	label Pais
+																	label#modals Pais
 																	br
 																	div.btn-group#find-page
 																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Pais
@@ -87,11 +88,11 @@ html
 																				a(href="#") action 2 
 
 																div.col-xs-6
-																	label Capacidad
+																	label#modals Capacidad
 																	input(type="text",placeholder="X Personas").form-control
 															div.row		
 																div.col-xs-6
-																	label Descripcion
+																	label#modals Descripcion
 																	textarea(rows="3",placeholder="insertar descripcion aqui de su propiedad").form-control		
 																
 															div.modal-footer#property-list
@@ -103,7 +104,7 @@ html
 			div.row.content
 				div.col-md-11
 					div.panel.panel-primary#property-list
-						table.table
+						table.table.table-striped
 							thead
 								tr
 									th # 
@@ -131,14 +132,14 @@ html
 														div.modal-body
 															div.row
 																div.col-xs-6
-																	label Titlo de Anuncio
+																	label#modals Titlo de Anuncio
 																	input(type="text",placeholder="Titulo").form-control
 																div.col-xs-6
-																	label Direccion
+																	label#modals Direccion
 																	input(type="text",placeholder="Direccion").form-control
 															div.row
 																div.col-xs-6
-																	label Pais
+																	label#modals Pais
 																	br
 																	div.btn-group#find-page
 																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") Panama
@@ -149,7 +150,7 @@ html
 																				a(href="#") Italia 
 
 																div.col-xs-6
-																	label Tipo de propiedad
+																	label#modals Tipo de propiedad
 																	div.btn-group#find-page
 																		button.btn.btn-default.dropdown-toggle(data-toggle="dropdown") 
 																			i.fa.fa-home    Casa
@@ -164,10 +165,10 @@ html
 																					i.fa.fa-th   Otro
 															div.row		
 																div.col-xs-6
-																	label Capacidad
+																	label#modals Capacidad
 																	input(type="text",placeholder="X personas").form-control		
 																div.col-xs-6
-																	label Descripcion
+																	label#modals Descripcion
 																	textarea(rows="3",placeholder="insertar descripcion aqui de su propiedad").form-control
 															div.modal-footer
 																div.col-xs-8
@@ -181,16 +182,18 @@ html
 										div.modal.fade#myModal1(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
 											div.modal-dialog
 												div.modal-content	
+
 													div.modal-header
+
 														button.close(data-dismiss="modal",aria-hidden="true") x
 														h5.modal-title Eliminar Propiedad
+
 														div.modal-body
 															div.row
 																p Estas seguro que deseas eliminar la Propiedad #Propiedad, para eliminarla coloca tu contrasenia y presiona eliminar Propiedad
 															div.row	
 																div.col-xs-3
-																label 
-																	input(type="text",placeholder="Password").form-control
+																input(type="text",placeholder="Password").form-control
 															div.modal-footer
 																div.col-xs-8
 																	a(href="#").btn.btn-danger#property-list 
@@ -231,7 +234,7 @@ html
 											i.fa.fa-trash-o
 
 						div.panel.panel-footer
-							div.line-separator.property-list
+							div.line-separator#property-list
 							div.col-md-4
 							div.pagination#property-list
 								li
