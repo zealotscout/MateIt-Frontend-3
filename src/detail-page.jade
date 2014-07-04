@@ -10,9 +10,10 @@ html
 		script(type="text/javascript",src="http://code.jquery.com/jquery.min.js")
 		script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
 		script(type="text/javascript",src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js")
-		script(type="text/javascript",src="/css/bootstrap/js/rating.js")
+		script(type="text/javascript",src="/bootstrap/js/rating-small.js")
+		script(type="text/javascript",src="/bootstrap/js/rating.js")
 	body
-		include partials/header2.jade
+		include partials/header.jade
 		
 		div.jumbotron#overhead
 			div.jumbotron-photo
@@ -59,206 +60,211 @@ html
 			div#myTabContent.tab-content
 				
 				div.tab-pane.fade.active.in#about 
-					div.row	
-						div.col-md-4
-							
-							div.jumbotron
-								div.jumbotron-photo
-									img(src="imgs/avatar.jpg")
-							div.row
-								div.col-md-4
+					div.col-md-12
+						div.row	
+							div.col-md-4
+								
+								div.jumbotron
+									div.jumbotron-photo
+										img(src="imgs/avatar.jpg")
+								div.row
+									div.col-md-3
 
-									div.panel.panel-default
-										div.panel
+										div.panel.panel-default
+											div.panel
+												div.jumbotron
+													div.jumbotron-photo
+														img(src="imgs/avatar.jpg")	
+									div.col-md-3	
+												div.jumbotron
+													div.jumbotron-photo
+														img(src="imgs/avatar.jpg")
+									div.col-md-3			
+												div.jumbotron
+													div.jumbotron-photo
+														img(src="imgs/avatar.jpg")	
+									div.col-md-3			
+												div.jumbotron
+													div.jumbotron-photo
+														img(src="imgs/avatar.jpg")							
+							div.col-md-6
+									h5 Descripcion
+									p Occupy hella actually, Echo Park beard single-origin coffee kitsch Odd Future flannel paleo fashion axe. Drinking vinegar asymmetrical gentrify try-hard, beard vegan slow-carb blog fashion axe. Carles meh cliche try-hard forage letterpress, Pitchfork church-key put a bird on it mlkshk four loko. Direct trade yr Carles, sustainable meh Williamsburg PBR&B fanny pack Blue Bottle tote bag fashion axe deep v pug High Life. Gentrify Brooklyn Truffaut post-ironic pop-up, jean shorts Helvetica authentic Bushwick irony. Seitan vinyl kogi, leggings umami iPhone Odd Future bespoke brunch Blue Bottle keffiyeh gentrify vegan fanny pack. Tonx iPhone put a bird on it, art party gluten-free pug fingerstache narwhal seitan beard asymmetrical distillery flexitarian banjo before they sold out.
+
+									p coffee Intelligentsia fap, slow-carb meh retro chia semiotics pop-up master cleanse ennui Tumblr freegan. Actually ennui fashion axe, swag gastropub photo booth High Life. Dreamcatcher Echo Park 3 wolf moon before they sold out Marfa pug. Kitsch bitters before they sold out, irony 3 wolf moon cliche sartorial Helvetica normcore four loko pug fanny pack. Irony gluten-free pork belly Pinterest mixtape, selvage quinoa yr synth tofu mumblecore vegan Odd Future. Ugh American Apparel biodiesel narwhal pickled, tattooed church-key chambray Cosby sweater ethical cornhole umami occupy. Shabby chic XOXO pug direct trade fixie.
+
+									p Wes Anderson gastropub direct trade, swag Helvetica skateboard Pinterest pug Neutra. 8-bit Odd Future mustache sriracha gentrify pug. Quinoa pug Marfa art party +1. Synth chambray McSweeney's gentrify. Pork belly butcher ethnic pop-up lomo, ethical leggings tofu fashion axe biodiesel. Organic fanny pack twee, McSweeney's literally shabby chic synth you probably haven't heard of them readymade pug yr. 8-bit fixie pour-over direct trade Williamsburg polaroid.
+									p pOh. You need a little dummy text for your mockup? How quaint.
+
+									p bet you’re still using Bootstrap too…
+				div.tab-pane.fade#roommates 
+					div.col-md-12
+						div.row	
+										
+								div.col-md-2
+
+									div.jumbotron
+
+										div.jumbotron-photo
+											img(src="imgs/avatar.jpg")
+
+									
+								div.col-md-4						
+									h5 Zealotscout
+									p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+								
+								div.col-md-2
+
+									div.jumbotron
+
+										div.jumbotron-photo
+											img(src="imgs/avatar.jpg")
+
+									
+								div.col-md-4						
+									h5 Zealotscout
+									p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+							div.row	
+										
+								div.col-md-2
+
+									div.jumbotron
+
+										div.jumbotron-photo
+											img(src="imgs/avatar.jpg")
+
+									
+								div.col-md-4						
+									h5 Zealotscout
+									p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+								
+								div.col-md-2
+
+									div.jumbotron
+
+										div.jumbotron-photo
+											img(src="imgs/avatar.jpg")
+
+									
+								div.col-md-4						
+									h5 Zealotscout
+									p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+																				
+						
+				div.tab-pane.fade#comments 
+					div.col-md-12
+						div.row
+							div.col-md-12
+								div.panel.panel-default
+										div.panel-body 
+											div.col-md-5
+												h5.comment-box-title Comentario : 
+												textarea.form-control(rows="2",placeholder="write text")#comment-box
+											div.col-md-4
+												h5.comment-box-title Puntuacion : 
+												div#stars.starrr
+													span.fa.fa-star-o.big
+													
+											
+											div.col-md-3
+												button.btn.btn-info#detail-page
+													i.fa.fa-building-o   Agregar Puntuacion
+						div.row	
+
+							div.col-md-6
+								div.panel.panel-default
+									div.panel-body
+										div.col-md-3
+
 											div.jumbotron
-												div.jumbotron-photo
-													img(src="imgs/avatar.jpg")	
-								div.col-md-4	
-											div.jumbotron
+
 												div.jumbotron-photo
 													img(src="imgs/avatar.jpg")
-								div.col-md-4			
-											div.jumbotron
-												div.jumbotron-photo
-													img(src="imgs/avatar.jpg")		
-						div.col-md-6
-								h5 Descripcion
-								p Occupy hella actually, Echo Park beard single-origin coffee kitsch Odd Future flannel paleo fashion axe. Drinking vinegar asymmetrical gentrify try-hard, beard vegan slow-carb blog fashion axe. Carles meh cliche try-hard forage letterpress, Pitchfork church-key put a bird on it mlkshk four loko. Direct trade yr Carles, sustainable meh Williamsburg PBR&B fanny pack Blue Bottle tote bag fashion axe deep v pug High Life. Gentrify Brooklyn Truffaut post-ironic pop-up, jean shorts Helvetica authentic Bushwick irony. Seitan vinyl kogi, leggings umami iPhone Odd Future bespoke brunch Blue Bottle keffiyeh gentrify vegan fanny pack. Tonx iPhone put a bird on it, art party gluten-free pug fingerstache narwhal seitan beard asymmetrical distillery flexitarian banjo before they sold out.
-
-								p coffee Intelligentsia fap, slow-carb meh retro chia semiotics pop-up master cleanse ennui Tumblr freegan. Actually ennui fashion axe, swag gastropub photo booth High Life. Dreamcatcher Echo Park 3 wolf moon before they sold out Marfa pug. Kitsch bitters before they sold out, irony 3 wolf moon cliche sartorial Helvetica normcore four loko pug fanny pack. Irony gluten-free pork belly Pinterest mixtape, selvage quinoa yr synth tofu mumblecore vegan Odd Future. Ugh American Apparel biodiesel narwhal pickled, tattooed church-key chambray Cosby sweater ethical cornhole umami occupy. Shabby chic XOXO pug direct trade fixie.
-
-								p Wes Anderson gastropub direct trade, swag Helvetica skateboard Pinterest pug Neutra. 8-bit Odd Future mustache sriracha gentrify pug. Quinoa pug Marfa art party +1. Synth chambray McSweeney's gentrify. Pork belly butcher ethnic pop-up lomo, ethical leggings tofu fashion axe biodiesel. Organic fanny pack twee, McSweeney's literally shabby chic synth you probably haven't heard of them readymade pug yr. 8-bit fixie pour-over direct trade Williamsburg polaroid.
-								p pOh. You need a little dummy text for your mockup? How quaint.
-
-								p bet you’re still using Bootstrap too…
-				div.tab-pane.fade#roommates 
-					div.row	
-									
-							div.col-md-2
-
-								div.jumbotron
-
-									div.jumbotron-photo
-										img(src="imgs/avatar.jpg")
-
-								
-							div.col-md-4						
-								h5 Zealotscout
-								p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-							
-							div.col-md-2
-
-								div.jumbotron
-
-									div.jumbotron-photo
-										img(src="imgs/avatar.jpg")
-
-								
-							div.col-md-4						
-								h5 Zealotscout
-								p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-						div.row	
-									
-							div.col-md-2
-
-								div.jumbotron
-
-									div.jumbotron-photo
-										img(src="imgs/avatar.jpg")
-
-								
-							div.col-md-4						
-								h5 Zealotscout
-								p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-							
-							div.col-md-2
-
-								div.jumbotron
-
-									div.jumbotron-photo
-										img(src="imgs/avatar.jpg")
-
-								
-							div.col-md-4						
-								h5 Zealotscout
-								p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-																			
-					
-				div.tab-pane.fade#comments 
-					div.row
-						div.col-md-12
-							div.panel.panel-default
-									h5 Comentario
-									div.panel-body 
-										div.col-md-5
-											textarea.form-control(rows="2",placeholder="write text")
-										div.col-md-4
-											div#stars.starr.comments
-												span.fa.fa-star-o
-												span.fa.fa-star-o
-												span.fa.fa-star-o
-												span.fa.fa-star-o
-												span.fa.fa-star-o
-										
+												div.jumbotron.contents.user-rating	
+													br
+													div#stars-small.starr
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o		
+												
+										div.col-md-9						
+											i.fa.fa-user#user    User
+												
+											p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+											
+							div.col-md-6
+								div.panel.panel-default
+									div.panel-body
 										div.col-md-3
-											button.btn.btn-info#add-property
-												i.fa.fa-building-o   Agregar Puntuacion
-					div.row	
 
-						div.col-md-6
-							div.panel.panel-default
-								div.panel-body
-									div.col-md-3
+											div.jumbotron
 
-										div.jumbotron
-
-											div.jumbotron-photo
-												img(src="imgs/avatar.jpg")
-											div.jumbotron.contents.user-rating	
-												br
-												div#stars.starr
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o					
+												div.jumbotron-photo
+													img(src="imgs/avatar.jpg")
+												div.jumbotron.contents.user-rating	
+													br
+													div#stars-small.starr
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o		
 											
-									div.col-md-9						
-										i.fa.fa-user#user    User
+										div.col-md-9						
+											i.fa.fa-user#user    User
+												
+											p Content to fill up the space between the avatar and the space between this content filled with paragraphs
 											
-										p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-										
-						div.col-md-6
-							div.panel.panel-default
-								div.panel-body
-									div.col-md-3
+							
+						div.row	
+							div.col-md-6
+								div.panel.panel-default
+									div.panel-body
+										div.col-md-3
 
-										div.jumbotron
+											div.jumbotron
 
-											div.jumbotron-photo
-												img(src="imgs/avatar.jpg")
-											div.jumbotron.contents.user-rating	
-												br
-												div#stars.starr
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o		
-										
-									div.col-md-9						
-										i.fa.fa-user#user    User
+												div.jumbotron-photo
+													img(src="imgs/avatar.jpg")
+												div.jumbotron.contents.user-rating	
+													br
+													div#stars.starr
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o		
 											
-										p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-										
-						
-					div.row	
-						div.col-md-6
-							div.panel.panel-default
-								div.panel-body
-									div.col-md-3
-
-										div.jumbotron
-
-											div.jumbotron-photo
-												img(src="imgs/avatar.jpg")
-											div.jumbotron.contents.user-rating	
-												br
-												div#stars.starr
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o		
-										
-									div.col-md-9						
-										i.fa.fa-user#user    User
+										div.col-md-9						
+											i.fa.fa-user#user    User
+												
+											p Content to fill up the space between the avatar and the space between this content filled with paragraphs
 											
-										p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-										
-						div.col-md-6
-							div.panel.panel-default
-								div.panel-body
-									div.col-md-3
+							div.col-md-6
+								div.panel.panel-default
+									div.panel-body
+										div.col-md-3
 
-										div.jumbotron
+											div.jumbotron
 
-											div.jumbotron-photo
-												img(src="imgs/avatar.jpg")
-											div.jumbotron.contents.user-rating	
-												br
-												div#stars.starr
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o
-													span.fa.fa-star-o		
-										
-									div.col-md-9						
-										i.fa.fa-user#user    User
+												div.jumbotron-photo
+													img(src="imgs/avatar.jpg")
+												div.jumbotron.contents.user-rating	
+													br
+													div#stars.starr
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o
+														span.fa.fa-star-o		
 											
-										p Content to fill up the space between the avatar and the space between this content filled with paragraphs
-										
+										div.col-md-9						
+											i.fa.fa-user#user    User
+												
+											p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+											
 						
 					
 				div.tab-pane.fade#location 

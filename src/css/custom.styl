@@ -1,5 +1,5 @@
 // Temas para usar: jumbotron para sombras y panels
-//
+
 .btn-circle#user-list 
   width 30px
   height 30px
@@ -13,8 +13,20 @@ div.navbar#detail-page
 	bottom 0 
 	z-index 1
 
+.comment-box-title
+	margin-left 7
 //-- Start of find-page css//
-
+.row.find-page-status-icons
+	font-size 1.2em
+	position relative
+	right 11
+	margin-right 5
+	text-align center
+	.fa 
+		padding-right 10
+div.col-md-12.find-page
+	position relative
+	top 50
 .thumbnail
 	.caption
 		position relative
@@ -29,18 +41,19 @@ div.black
 	background-color #000
 	position relative
 
-	top -53
+	top -71
 	opacity 0.5
 
 div.col-md-3#rightside
 	float left
 	span
-		font-weight bold		
+		font-weight bold
+		color #9c9c9c	
 	div.btn-group#find-page 
 		.btn
-			width 200
+			width 236
 	.form-control
-		width 179px
+		width 212px
 img#find-page
 	width 87%
 	height 53px
@@ -50,17 +63,34 @@ img#find-page
 .jumbotron#find-page
 	span
 		margin-left 10
-div.jumbotron-contents.find-page
+.jumbotron-contents.find-page
 	p
 	text-align justify
 	position relative
 	top -140
+	box-shadow 0 2px 3px rgba(0,0,0,0.2)
+	.btn
+		padding 11 12
 
 
-div.jumbotron.find-page 
+.jumbotron.find-page 
+	width 392
 	height 50%
+	border-top-left-radius 0
+	border-top-right-radius 0
+	border-bottom-left-radius 4
+	border-bottom-right-radius 4 
+	box-shadow 0 28px 1px rgba(0, 0, 0, .2)
 	.fa.find-page
 		color white
+	.jumbotron-photo	
+		img	
+			border-radius 0
+	.jumbotron-contents
+		border-top-left-radius 0
+		border-top-right-radius 0
+		border-bottom-left-radius 4
+		border-bottom-right-radius 4 
 div.jumbotron
 	
 	h5
@@ -68,7 +98,7 @@ div.jumbotron
 		position relative
 		bottom 194
 		width 89%
-		top -130
+		top -144
 		z-index 5
 		right -5
 
@@ -77,7 +107,7 @@ div.jumbotron
 	padding 8
 	padding-bottom 15
 	padding-left 22
-
+	width 392
 
 .form-control
 	height 34px
@@ -123,7 +153,7 @@ li
 
 
 .btn-info
-	background-color #B7E06F
+	background-color  #99c948
 	border-color #90B74D
 
 
@@ -132,7 +162,9 @@ button.btn.btn-info
 	position relative 50px
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 126%
+	background-size 154%
+
+	
 
 
 
@@ -329,10 +361,15 @@ i.fa.fa-building-o#sidebar
 	transition all 0.4s ease 0s
 	text-align center
 	width 150px
+	top 52
 
 
 .navbar.navbar-inverse
 	margin-bottom 0px
+	z-index 6
+	width 100%
+	position fixed
+
 a.btn.btn-primary
 	border-color #218EB6
 	background-image url(button-cover-2.png)
@@ -403,6 +440,8 @@ div.row#inputboxes
 		width 320px	
 div.row.add-property
 	padding 8px
+	position relative
+	top 50
 button.btn.btn-info#add-property 
 	width 170px
 	margin-top -31px
@@ -438,7 +477,17 @@ div#wrapper
 // end of add-property css
 
 //start of detail-page
+button.btn.btn-info#detail-page
+	width 188
+	background-size 100%
+	margin-top 55
+	background-color #90b64e
+	border-color #90b64e
 
+
+	
+.btn#detail-page
+	padding 13px 13px	
 div.black#detail-page
 	height 20%
 	width auto
@@ -456,7 +505,7 @@ div.black#detail-page
 	z-index 0 
 .tab-content
 	position relative
-	top -70
+	top -54
 	
 
 .nav-tabs.nav-justified
@@ -476,7 +525,7 @@ div.description
 	color white
 	z-index 2
 	position absolute
-	top 129
+	top 79
 	left 46
 	p
 		font-weight strong
@@ -497,6 +546,8 @@ img.overhead
 	clip rect(50,auto,400,auto)
 	top -150
 	z-index 0
+.form-control#comment-box
+	width 358
 div.panel#detail-page
 	position relative
 	bottom -69
@@ -516,12 +567,15 @@ div.tab-pane
 	display block
 i.fa.fa-user#user
 	font-size 1.30em
-div#stars.starr.comments
-	span.fa.fa-star-o
-		font-size 2.50em
-div#stars.starr
-	span.fa.fa-star-o
-		font-size 1.40em
+
+.fa-star.big
+	color grey
+	font-size 2.50em
+
+.fa-star-o.big
+	color grey
+	font-size 2.50em	
+
 
 ul#mytab1.nav.nav-tabs.nav-justified
 	li#contactar
@@ -575,6 +629,7 @@ div.jumbotron.contents.user-rating
 div.row.content
 	position relative
 	left -108
+	top 50
 button.btn.btn-info#property-list
 	width 188
 	background-size 100%
@@ -625,7 +680,7 @@ body#property-list
 		color #D6D3D3
 
 ol.breadcrumb#property-list
-	width 230px
+	width 176px
 	
 @media 
 	min-width 768px
@@ -664,7 +719,10 @@ a.btn.btn-primary#fotos-user-dashboard
 	background-size 100%
 	position relative
 	right -15%
+	padding 10 13
 div.row#user-dashboard-overhead
+	.line-separators
+		margin-top -16
 	position relative
 	left -43
 h5#user-dashboard-headers
@@ -674,23 +732,49 @@ h5#user-dashboard-headers
 div.col-md-4.left-input
 	position relative
 	left -15
+	.form-control 
+		margin-top 7
+		margin-bottom 7
+	.btn-default
+		margin-top 5
+	div.btn-group#find-page
+		
+		margin-top 5
 div.col-md-3.right-input
 	position relative
 	right 50
-.btn#resetear
-	padding 10px 12px
+	.form-control 
+		margin-top 7
+		margin-bottom 7
+	
+		
+		
+	.btn#resetear
+		padding 10px 12px
+		margin-top 10
+		margin-left 8
+		background-image url(button-cover-2.png)
+		background-repeat no-repeat
+		background-size 100%	
 div.col-md-12.content#user-dashboard
 	position relative
 	left -44
+	top 50
 	
 
 a.btn.btn-primary#conectar
 	
 	background-color #216eb6
+	background-image url(button-cover-2.png)
+	background-repeat no-repeat
+	background-size 100%
+	margin-top 30
+	padding 10 13
 	.fa
 		font-size 1.1em
 		span
 			font-size 0.9em	
+
 .jumbotron#user-dashboard-profile
 	background-color transparent
 	box-shadow none
@@ -700,6 +784,8 @@ a.btn.btn-primary#conectar
 
 div.row.user-dashboard
 	padding 0px
+	position relative
+	top 50
 .line-separator#property-list
 	height 1px
 	background #E8E4E5
@@ -746,7 +832,7 @@ button.btn.btn-info#user-dashboard
 	border-color #b7e06f
 	width 180px
 	height 35px
-	right 99px
+	margin-left 30
 	bottom -10
 	position relative
 	background-image url(button-cover-2.png)
@@ -785,6 +871,7 @@ div.pagination
 .circle#status-normal   
   width 15px
   height 15px
+
   line-height 15px /* adjust line height to align vertically*/
   padding 0
   border-radius 50%
