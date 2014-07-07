@@ -551,6 +551,14 @@ img.overhead
 div.panel#detail-page
 	position relative
 	bottom -69
+.panel#property-list
+	.table
+		thead 
+			tr 
+				th
+					padding-top 16
+					padding-left 30
+					padding-right 27
 .navbar-default
 	background-color #53BFEE
 	border-color #53BFEE
@@ -608,7 +616,8 @@ div.jumbotron.contents.user-rating
 .btn#property-list
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 114%
+	background-size 127%
+	height 41
 
 .modal-footer#property-list
 	margin-top -10px
@@ -831,7 +840,7 @@ div.row#shift
 button.btn.btn-info#user-dashboard
 	border-color #b7e06f
 	width 180px
-	height 35px
+	height 40px
 	margin-left 30
 	bottom -10
 	position relative
@@ -844,17 +853,69 @@ button.btn.btn-info#user-dashboard
 //end of user-dashboard
 
 //user-list-page
+.row#breadcrumb
+	position relative
+	top 9
+.panel
+	.table:first-child
+		color #B3B3B3
+		
+.table-striped
+	tr:nth-child(even)
+		background-color #FAFAFA
+
+
+.table-striped
+	tbody
+		tr:nth-child(odd)
+			td
+				background-color white
+
+
+.table
+	tbody
+		tr 
+			td 
+				padding 30
+				padding-top 16
+				padding-bottom 6
+
 label#modals
 	margin-left 9
+	margin-top 15
+.col-xs-6#modal-message-create
+	.fa 
+		margin-top 51
+		margin-left 25
+		color rgb(74, 178, 219)
+.col-xs-6#modal-message-edit
+	.fa 
+		margin-top 15
+		margin-left 14
+		color rgb(74, 178, 219)
+.modal-body
+	p#modal-message-create
+		font-size 0.89em
+		font-weight bold
+		margin -24 21 29 40px
+.modal-body
+	p#modal-message-edit
+		font-size 0.70em
+		font-weight bold
+		margin -24 21 29 30px		
 .modal-title
-	margin-left 24
+	margin-left 3
+
 .panel-heading#user-list
 	padding 0px
 	border-bottom none	
+
 .pagination#user-list
 	li
 		a:active
-			background-color #31AAC7
+			background-color #53BDD8
+			border-color #53BDD8
+
 	position relative
 	left 248px
 div.panel.panel-footer
@@ -875,10 +936,10 @@ div.pagination
   line-height 15px /* adjust line height to align vertically*/
   padding 0
   border-radius 50%
-  background-color #31AAC7
+  background-color #40A88F
   text-align center
   color white		
-
+  margin-left 15
 .btn-circle#user-list 
   width 30px
   height 30px
@@ -887,6 +948,7 @@ div.pagination
   font-size 12px
   line-height 1.428571429
   border-radius 30px
+  margin 3
 
 
 .btn.btn-primary.btn-circle#user-list
@@ -905,12 +967,14 @@ div.pagination
   line-height 15px /* adjust line height to align vertically*/
   padding 0
   border-radius 50%
-  background-color red
+  background-color #EB3131
   text-align center
   color white			
+  margin-left 15
 //end of user-list-page
 .table
 	margin-bottom none
+	font-weight none
 table
 	thead
 		tr
@@ -934,14 +998,19 @@ table
 .btn.btn-primary.btn-circle#property-list
 	background-color #53545a
 	border-color none
-	
+	margin 3
 .btn.btn-primary.btn-circle#property-list:hover
 	background-color #C6C7CF
 
 .pagination#property-list
+	.active
+		a
+			background-color #53BDD8
+			border-color #53BDD8
 	li
 		a:active
-			background-color #31AAC7
+			background-color #6AD7F3
+			border-color #53BDD8
 	position relative
 	
 div.panel.panel-footer

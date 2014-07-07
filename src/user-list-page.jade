@@ -40,7 +40,7 @@ html
 							i.fa.fa-building-o#sidebar
 				div#sidebar-wrapper2			
 			div.row.content		
-				div.row
+				div.row#breadcrumb
 					div.col-md-2	
 						div.navbar
 							ol.breadcrumb#property-list
@@ -87,8 +87,10 @@ html
 																	div.col-xs-6
 																		label#modals Correo
 																		input(type="text",placeholder="utube@hotmail.com").form-control		
-																	div.col-xs-6
-																		p Enviaremos una contrasenia autogenerada al correo proporcionado
+																	div.col-xs-6#modal-message-create
+																		i.fa.fa-asterisk 
+																		p#modal-message-create Enviaremos una contrasenia autogenerada al correo proporcionado
+																		
 																div.modal-footer
 																	div.col-xs-8
 																		button.btn.btn-success#property-list
@@ -174,6 +176,10 @@ html
 																		label#modals Contrasenia
 																		a(href="#").btn.btn-danger#property-list 
 																			i.fa.fa-pencil Resettear contrasenia
+																div.row
+																	div.col-xs-6#modal-message-edit
+																		i.fa.fa-asterisk 
+																		p#modal-message-edit Te enviaremos un correo para verificar nuevo correo
 																div.modal-footer
 																	div.col-xs-8
 																		button.btn.btn-success#property-list
@@ -196,7 +202,7 @@ html
 																div.modal-footer
 																	div.col-xs-8
 																		a(href="#").btn.btn-danger#property-list 
-																			i.fa.fa-trash-o Eliminar Usuario
+																			i.fa.fa-trash-o 		Eliminar Usuario
 											button(type="button",data-target="#myModal3",data-toggle="modal").btn.btn-primary.btn-circle#user-list 
 												i.fa.fa-ban
 											div.modal.fade#myModal3(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
@@ -222,7 +228,7 @@ html
 																	
 																	div.col-xs-8
 																		a(href="#").btn.btn-danger#property-list
-																			i.fa.fa-trash-o Bloquear Usuario		
+																			i.fa.fa-ban 		Bloquear Usuario		
 									tr
 										td 3
 										td rolilink
@@ -262,8 +268,8 @@ html
 								
 								div.col-md-4
 								div.pagination#property-list
-									li
-										a(href="#") prev	
+									li.active
+										a(href="#") PREV
 									li
 										a(href="#") 1
 									li	
@@ -274,6 +280,6 @@ html
 										a(href="#") 4
 									li.disabled
 										a(href="#") 5	
-									li
-										a(href="#") Next	
+									li.active
+										a(href="#") NEXT
 			
