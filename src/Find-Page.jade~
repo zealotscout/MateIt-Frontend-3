@@ -75,7 +75,7 @@ html
 							div.col-md-1
 							div.row.find-page-status-icons
 								i.fa.fa-usd 	
-									span 300      
+									span TEST      
 								i.fa.fa-home  
 									span 	Casa
 								i.fa.fa-users
