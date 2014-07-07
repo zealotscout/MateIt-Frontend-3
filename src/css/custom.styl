@@ -8,6 +8,8 @@
   font-size 12px
   line-height 1.428571429
   border-radius 30px
+  .fa
+  	font-size 1.4em
 div.navbar#detail-page
 	position relative
 	bottom 0 
@@ -244,6 +246,10 @@ end of find-page CS
 */
 
 //Beginning of user-property-page
+
+
+ol.breadcrumb#user-property-page
+	width 260px
 div.navbar.overcontent#user-dashboard
 	position relative
 	left -90px
@@ -267,7 +273,8 @@ div.row#perfil
 		margin-left 10
 //end of user-property-page
 //Beginning of add-property css
-
+ol.breadcrumb#add-property
+	width 260px
 .btn-default
 	color #80868f
 .breadcrumb
@@ -559,6 +566,31 @@ div.panel#detail-page
 					padding-top 16
 					padding-left 30
 					padding-right 27
+
+.input-group-addon#property-list:first-child
+		position relative
+		right -219px
+		z-index 3
+		font-size 1.2em
+		color #646666
+		padding 7px			
+		border-bottom-right-radius 5
+		border-top-right-radius 5	
+		border-top-left-radius 0
+		border-bottom-left-radius 0
+		border-right 1
+		border-left none
+		border-right-width 1
+		border-right-style solid
+		border-right-color #96a0ad
+.panel#property-list-2
+	.table
+		thead 
+			tr 
+				th
+					padding-top 16
+					padding-left 30
+					padding-right 30				
 .navbar-default
 	background-color #53BFEE
 	border-color #53BFEE
@@ -612,7 +644,8 @@ div.jumbotron.contents.user-rating
 
 
 //start of property-list
-
+ol.breadcrumb#property-list
+	width 260px
 .btn#property-list
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
@@ -621,18 +654,8 @@ div.jumbotron.contents.user-rating
 
 .modal-footer#property-list
 	margin-top -10px
-.input-group-addon.property-list:first-child
-		position relative
-		right -214px
-		z-index 3
-		font-size 1.2em
-		color #646666
-		padding 8px
-		border 1px solid #aab2bd
-		border-left none
-		border-top-left-radius 2
-		border-bottom-left-radius 4
-		border-right-radius 3px
+
+
 .modal-content
 	color #A0A0A0
 div.row.content
@@ -670,12 +693,18 @@ body#property-list
 			tr:first-child
 			th:last-child
 				border-top-right-radius 10	
+
 		
 .input-group#property-list
-	position relative 
+	
 	margin-top 10
-	right -74
+	margin-left 65
+	
 	width 215px
+	border-bottom-left-radius 4
+	border-top-left-radius 4
+
+
 	.form-control:last-child
 		border-top-left-radius 5
 		border-bottom-left-radius 5
@@ -686,7 +715,9 @@ body#property-list
 		color #D6D3D3
 
 	.fa 
-		color #D6D3D3
+		color #E7E1E1
+.form-control::-webkit-input-placeholder
+	  color #B8B8B8
 
 ol.breadcrumb#property-list
 	width 176px
@@ -717,6 +748,8 @@ input.search-query.form-control#property-list
 //end of property-list
 
 //start of user-dashboard
+ol.breadcrumb#user-dashboard
+	width 261px
 a.btn.btn-primary#fotos-user-dashboard 	
 	
 	text-align justify
@@ -853,6 +886,8 @@ button.btn.btn-info#user-dashboard
 //end of user-dashboard
 
 //user-list-page
+ol.breadcrumb#user-list
+	width 161px
 .row#breadcrumb
 	position relative
 	top 9
@@ -995,6 +1030,8 @@ table
   font-size 12px
   line-height 1.428571429
   border-radius 30px
+  .fa
+  	font-size 1.4em
 .btn.btn-primary.btn-circle#property-list
 	background-color #53545a
 	border-color none
