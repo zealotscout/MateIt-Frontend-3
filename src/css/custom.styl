@@ -387,7 +387,11 @@ a.btn.btn-danger
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
 	background-size 114%
-
+a.btn.btn-danger#property-list
+	.fa
+		font-size 20
+		span
+			font-size 15px
 
 a.btn.btn-primary#fotos
 	text-align justify
@@ -566,6 +570,7 @@ div.panel#detail-page
 					padding-top 16
 					padding-left 30
 					padding-right 27
+					
 
 .input-group-addon#property-list:first-child
 		position relative
@@ -644,6 +649,17 @@ div.jumbotron.contents.user-rating
 
 
 //start of property-list
+
+.panel#property-list-2
+	.table:first-child
+		tr:first-child
+		th:first-child
+			border-top-left-radius 10
+		thead:first-child
+			tr:first-child
+			th:last-child
+				border-top-right-radius 10	
+
 ol.breadcrumb#property-list
 	width 260px
 .btn#property-list
@@ -668,6 +684,11 @@ button.btn.btn-info#property-list
 	margin-top 9
 	background-color #90b64e
 	border-color #90b64e
+	.fa
+		font-size 20px
+		span
+			font-size 15px
+
 	
 .btn#property-list
 	padding 10px 13px
@@ -832,6 +853,8 @@ div.row.user-dashboard
 	height 1px
 	background #E8E4E5
 	border-bottom 2px solid #D7D7DB
+	margin-left -15
+	width 931
 
 .line-separators
 	height 1px
@@ -1017,6 +1040,9 @@ table
 				background-color rgb(44,176,214)
 				color white
 //start of property list
+
+.panel#property-list-2
+	border-radius 42px
 .btn-primary
 	border-color transparent
 .panel-heading#property-list
@@ -1052,5 +1078,5 @@ table
 	
 div.panel.panel-footer
 	background-color white
-	
+	border-radius 0 0 10 10
 //end of property list
