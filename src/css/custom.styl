@@ -48,9 +48,13 @@ div.black
 
 div.col-md-3#rightside
 	float left
-	span
-		font-weight bold
-		color #9c9c9c	
+	.form-control::-webkit-input-placeholder
+	  color #B8B8B8
+	  font-family 'Lato'
+	.jumbotron#find-page
+		span
+			font-weight bold
+			color #888888	
 	div.btn-group#find-page 
 		.btn
 			width 236
@@ -65,15 +69,38 @@ img#find-page
 .jumbotron#find-page
 	span
 		margin-left 10
+		
+			
 .jumbotron-contents.find-page
 	p
 	text-align justify
 	position relative
 	top -140
+	font-family 'Lato'
+	font-weight 500
 	box-shadow 0 2px 3px rgba(0,0,0,0.2)
 	.btn
 		padding 11 12
+		span
+			font-size 25
 
+.jumbotron-contents.find-page
+	p
+	text-align justify
+	position relative
+	top -140
+	font-family 'Lato'
+	font-weight 700
+	box-shadow 0 2px 3px rgba(0,0,0,0.2)
+	.btn
+		padding 11 12
+		background-size 176%
+		width 117
+		.fa
+			font-size 20
+		span.find-page 
+			font-size 14
+			color white
 
 .jumbotron.find-page 
 	width 392
@@ -88,11 +115,15 @@ img#find-page
 	.jumbotron-photo	
 		img	
 			border-radius 0
+		h5
+			font-family 'Lato'
+			font-weight 400
 	.jumbotron-contents
 		border-top-left-radius 0
 		border-top-right-radius 0
 		border-bottom-left-radius 4
 		border-bottom-right-radius 4 
+		
 div.jumbotron
 	
 	h5
