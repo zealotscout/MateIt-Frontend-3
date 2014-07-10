@@ -29,64 +29,54 @@ html
 		div.col-md-3
 		div.row
 		div.panel#detail-page
-			ul#under.nav.nav-tabs.nav-justified
-				li.active
-					a(href='') 
-						span
-				li
-					
-				li
-					
-				li
-					
-				li
-					
 			ul#mytab1.nav.nav-tabs.nav-justified
-				li.active
+				li.active#acerca-de
 					a(href='#about',data-toggle="tab") 
-						i.fa.fa-comment-o    Acerca de
+						i.fa.fa-comment-o   
+							span	Acerca de
 				li
 					a(href='#roommates',data-toggle="tab") 
-						i.fa.fa-users    Roommates
+						i.fa.fa-users  
+							span	Roommates
 				li
 					a(href='#location',data-toggle="tab")
-						i.fa.fa-map-marker    Localizacion
-				li
+						i.fa.fa-map-marker   
+							span Localizacion
+				li#comentario
 					a(href='#comments',data-toggle="tab")
-						i.fa.fa-comments    Comentarios
+						i.fa.fa-comments 
+							span   	Comentarios
 				li#contactar
 					a(href='#contact',data-toggle="tab")
-						i.fa.fa-envelope#Contactar    Contactar
+						i.fa.fa-envelope#Contactar 
+							span Contactar
 			div#myTabContent.tab-content
 				
 				div.tab-pane.fade.active.in#about 
 					div.col-md-12
 						div.row	
-							div.col-md-4
+							div.col-md-4#thumbnails
 								
-								div.jumbotron
+								div.jumbotron#main-thumbnail
 									div.jumbotron-photo
-										img(src="imgs/avatar.jpg")
+										img(src="imgs/guts.jpg")
 								div.row
 									div.col-md-3
-
-										div.panel.panel-default
-											div.panel
-												div.jumbotron
-													div.jumbotron-photo
-														img(src="imgs/avatar.jpg")	
+										div.jumbotron
+											div.jumbotron-photo
+												img(src="imgs/avatar.jpg")	
 									div.col-md-3	
-												div.jumbotron
-													div.jumbotron-photo
-														img(src="imgs/avatar.jpg")
+										div.jumbotron
+											div.jumbotron-photo
+												img(src="imgs/avatar.jpg")
 									div.col-md-3			
-												div.jumbotron
-													div.jumbotron-photo
-														img(src="imgs/avatar.jpg")	
+										div.jumbotron
+											div.jumbotron-photo
+												img(src="imgs/avatar.jpg")	
 									div.col-md-3			
-												div.jumbotron
-													div.jumbotron-photo
-														img(src="imgs/avatar.jpg")							
+										div.jumbotron
+											div.jumbotron-photo
+												img(src="imgs/avatar.jpg")							
 							div.col-md-6#description-col
 									h5 Descripcion
 									p Occupy hella actually, Echo Park beard single-origin coffee kitsch Odd Future flannel paleo fashion axe. Drinking vinegar asymmetrical gentrify try-hard, beard vegan slow-carb blog fashion axe. Carles meh cliche try-hard forage letterpress, Pitchfork church-key put a bird on it mlkshk four loko. Direct trade yr Carles, sustainable meh Williamsburg PBR&B fanny pack Blue Bottle tote bag fashion axe deep v pug High Life. Gentrify Brooklyn Truffaut post-ironic pop-up, jean shorts Helvetica authentic Bushwick irony. Seitan vinyl kogi, leggings umami iPhone Odd Future bespoke brunch Blue Bottle keffiyeh gentrify vegan fanny pack. Tonx iPhone put a bird on it, art party gluten-free pug fingerstache narwhal seitan beard asymmetrical distillery flexitarian banjo before they sold out.
@@ -250,7 +240,7 @@ html
 											div.col-md-9						
 												i.fa.fa-user#user    User
 												
-											p Content to fill up the space between the avatar and the space between this content filled with paragraphs
+												p Content to fill up the space between the avatar and the space between this content filled with paragraphs
 											
 						
 					

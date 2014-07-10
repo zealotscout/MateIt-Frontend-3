@@ -523,10 +523,21 @@ div#wrapper
 // end of add-property css
 
 //start of detail-page
+
+.col-md-4#thumbnails
+	.jumbotron
+		box-shadow none
+	.jumbotron#main-thumbnail
+		border-style solid
+		border-radius 1
+		border-color white
+
 div#roommates-col
 	font-family 'Lato'
 	font-weight 500
 	font-size 15
+	.jumbotron
+		box-shadow none
 
 div#description-col
 	font-family 'Lato'
@@ -574,17 +585,17 @@ div.black#detail-page
 	
 
 .nav-tabs.nav-justified
-	width 60%
+	width 100%
 	font-size 0.9em
 	position relative
-	top -60
+	top -59
 	li
 		border-left none
 
 .nav
 	li
 		a
-			padding 20px 15px
+			padding 26px 15px
 
 div.description
 	color white
@@ -615,7 +626,7 @@ img.overhead
 	width 358
 div.panel#detail-page
 	position relative
-	bottom -69
+	bottom -130
 .panel#property-list
 	.table
 		thead 
@@ -686,13 +697,22 @@ ul#mytab1.nav.nav-tabs.nav-justified
 	li#contactar
 		background-color #4AACD1
 		position relative
-		right -515
+		right 0
+	li#comentario
+		position relative
+		padding-right 459
+	li#acerca-de
+		position relative
+		padding-left 28
 ul#mytab1.nav.nav-tabs.nav-justified
 	li
 		a
-			i 
-				font-size 1.20em
+			.fa
+				font-size 21px
 				color white
+				span 
+					font-size 15px
+
 div#location
 	background-color white
 div.jumbotron.contents.user-rating
