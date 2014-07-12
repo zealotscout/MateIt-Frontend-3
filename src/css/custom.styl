@@ -25,11 +25,11 @@ div.navbar#detail-page
 .row.find-page-status-icons
 	font-size 1.2em
 	position relative
-	right 11
+	right 52
 	margin-right 5
-	text-align center
+	text-align justify
 	.fa 
-		padding-right 10
+		margin-left 21
 div.col-md-12.find-page
 	position relative
 	top 50
@@ -41,7 +41,7 @@ div.col-md-12.find-page
 
 
 div.black
-	height 17%
+	height 20%
 	width 100%
  	z-index 2
 	background-color #000
@@ -62,6 +62,7 @@ div.col-md-3#rightside
 	div.btn-group#find-page 
 		.btn
 			width 236
+			height 40
 	.form-control
 		width 212px
 img#find-page
@@ -113,7 +114,7 @@ img#find-page
 	border-top-right-radius 0
 	border-bottom-left-radius 4
 	border-bottom-right-radius 4 
-	box-shadow 0 28px 1px rgba(0, 0, 0, .2)
+	
 	.fa.find-page
 		color white
 	.jumbotron-photo	
@@ -122,6 +123,7 @@ img#find-page
 		h5
 			font-family 'Lato'
 			font-weight 400
+			font-size 21
 	.jumbotron-contents
 		border-top-left-radius 0
 		border-top-right-radius 0
@@ -131,11 +133,11 @@ img#find-page
 div.jumbotron
 	
 	h5
-		color white
+		color #E4DEDE
 		position relative
 		bottom 194
 		width 89%
-		top -144
+		top -161
 		z-index 5
 		right -5
 
@@ -234,12 +236,14 @@ div.col-md-3#rightside
 	padding-top 20px
 div.btn-group#find-page
 	padding-left 10px
+	margin-bottom 18px
 	.fa.fa-users 
 		padding-right 150px
 	.fa.fa-building-o
 		padding-right 200px
 
-
+.input-group#find-page
+	margin-bottom 15
 	
 .form-control
 	width 240px
@@ -307,9 +311,16 @@ div.row#perfil
 	span
 		margin-left 10
 //end of user-property-page
-//Beginning of add-property css
+//start of add-property css
+.col-md-12.content#add-property		
+	color grey
+
+div.row.add-property#property-attributes
+	margin-bottom 16
+.form-control#precio
+	height 40px
 ol.breadcrumb#add-property
-	width 260px
+	width 289px
 .btn-default
 	color #80868f
 .breadcrumb
@@ -325,7 +336,7 @@ ol.breadcrumb#add-property
 .form-control#descripcion
 	width 548
 .form-control.add-property
-	height 34px
+	height 38px
 	margin-left 3px
 div.navbar.overcontent
 	position relative
@@ -333,14 +344,17 @@ div.navbar.overcontent
 div.btn-group#add-property
 	.btn
 		padding 10px
+		width 254
 div.col-md-4.roommatebox
 	
 	position relative
 	top -30
-		
+	.form-control.add-property
+		margin-bottom 7
 div.col-md-12.content
 	position relative
 	left -108;
+
 .btn-info
 	border-color #b7e06f	
 div
@@ -435,7 +449,7 @@ a.btn.btn-primary#fotos
 	background-color #3d7ec5
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 100%
+	background-size 114%
 .btn#add-property
 	padding 5px 13px
 	.fa
@@ -445,7 +459,7 @@ this
 	font-size 1.10em
 
 .btn#fotos
-	padding 5px 13px
+	padding 8px 13px
 	.fa
 		font-size 1.2em
 this
@@ -457,10 +471,10 @@ a.btn.btn-primary#roommates
 	margin-top 15px
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 100%
+	background-size 114%
 
 .btn#roommates
-	padding 5px 13px
+	padding 8px 13px
 	.fa
 		font-size 1.3em
 this
@@ -474,31 +488,40 @@ div.location
 	bottom -49px
 	
 
-
 div.row#inputboxes
 	
 	input.right 
 		display block
 		width 462px
+	margin-bottom 7
 
 	input.left
 		display block
-		width 320px	
+		width 353px	
 div.row.add-property
 	padding 8px
 	position relative
 	top 50
+div.row.add-property#bottom
+	margin-bottom 40
 button.btn.btn-info#add-property 
 	width 170px
 	margin-top -31px
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
 	background-size 175
+
 ol.breadcrumb
 	text-align center
 	margin-top 10px
 button.btn.btn-info#add-property 
-	right 90px
+	right 18px
+	top 19
+
+	padding 10px 13px
+	position relative
+	width 203
+	background-size 100%
 
 
 .btn.btn-primary#roommates
@@ -547,7 +570,7 @@ div#comment-body
 	font-family 'Lato'
 	font-size 17px
 button.btn.btn-info#detail-page
-	width 188
+	width 213
 	background-size 115%
 	margin-top 31
 	background-color #85B432
@@ -751,6 +774,7 @@ div.jumbotron.contents.user-rating
 
 ol.breadcrumb#property-list
 	width 260px
+	height 40
 .btn#property-list
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
@@ -778,9 +802,13 @@ button.btn.btn-info#property-list
 		span
 			font-size 15px
 
+.col-xs-9	
+	.btn#property-list
+		padding 10px 13px
+		position relative 
+		left -17
 	
-.btn#property-list
-	padding 10px 13px
+			
 .panel#property-list
 	border-radius 42px
 body#property-list
@@ -808,7 +836,7 @@ body#property-list
 .input-group#property-list
 	
 	margin-top 10
-	margin-left 65
+	margin-left 120px
 	
 	width 215px
 	border-bottom-left-radius 4
@@ -829,8 +857,7 @@ body#property-list
 .form-control::-webkit-input-placeholder
 	  color #B8B8B8
 
-ol.breadcrumb#property-list
-	width 176px
+
 	
 @media 
 	min-width 768px
@@ -858,6 +885,8 @@ input.search-query.form-control#property-list
 //end of property-list
 
 //start of user-dashboard
+div#bottom
+	margin-bottom 40px
 ol.breadcrumb#user-dashboard
 	width 261px
 a.btn.btn-primary#fotos-user-dashboard 	
@@ -868,7 +897,7 @@ a.btn.btn-primary#fotos-user-dashboard
 	background-color #3d7ec5
 	background-image url(button-cover-2.png)
 	background-repeat no-repeat
-	background-size 100%
+	background-size 113%
 	position relative
 	right -15%
 	padding 10 13
@@ -942,8 +971,11 @@ div.row.user-dashboard
 	height 1px
 	background #E8E4E5
 	border-bottom 2px solid #D7D7DB
-	margin-left -15
-	width 931
+	margin-left -16
+	margin-right -15
+	width auto
+	margin-top 22
+	margin-bottom 42
 
 .line-separators
 	height 1px
@@ -999,7 +1031,7 @@ button.btn.btn-info#user-dashboard
 
 //user-list-page
 ol.breadcrumb#user-list
-	width 161px
+	width 185px
 .row#breadcrumb
 	position relative
 	top 9
@@ -1150,7 +1182,8 @@ table
 .btn.btn-primary.btn-circle#property-list
 	background-color #53545a
 	border-color none
-	margin 3
+	margin-right 3
+	margin-bottom 5
 .btn.btn-primary.btn-circle#property-list:hover
 	background-color #C6C7CF
 

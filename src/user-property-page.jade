@@ -30,21 +30,21 @@ html
 			div#sidebar-wrapper
 				div.row
 					a(href='#')
-						i.fa.fa-users#sidebar
+						i.fa.fa-user#sidebar
 					//-div.arrow-left		
 
 				div.row
 					a(href='#')
 						i.fa.fa-building-o#sidebar
 					img(src="imgs/triangle.png")#triangle.property
-			div#sidebar-wrapper2		
+			div#sidebar-wrapper2
 			div.row.add-property#add-property	
 				div.col-md-4	
 					div.navbar.overcontent
-						ol.breadcrumb#user-property-page
-							li.active 
+						ol.breadcrumb#add-property
+							li.active
 								a(href='#') 
-								span panel
+								span Panel
 							li
 								a(href='#') Propiedades
 							li
@@ -52,17 +52,16 @@ html
 
 								
 				div.col-md-8
-			div.col-md-12.content		
+			div.col-md-12.content#add-property		
 				div.row.add-property#inputboxes
 					div.col-md-5
 						p Titulo del Clasificado
-						input(type="text").form-control(placeholder="Apartamento situado en Altos de Panama").add-property.left
-					div.col-md-5
+						input(type="text").form-control(placeholder="Apartamento situatdo en altos de panama").add-property.left
+					div.col-md-7
 						p Descripcion	
 						textarea(rows="2").form-control(placeholder="Casa bonita y equipada con todas las comodidades para vivir al estilo que tu necesitas")#descripcion
-
 				div.row.add-property#property-attributes
-					div.col-md-4
+					div.col-md-3
 						p Tipo de Propiedad
 						div.btn-group#add-property
 							button(data-toggle="dropdown").btn.btn-default.dropdown-toggle 
@@ -75,28 +74,28 @@ html
 									a(href='#') 
 										i.fa.fa-home			Casa
 									a(href='#') 
-										i.fa.fa-th		Otro
-
-					div.col-md-4
+										i.fa.fa-th 		Otro
+					div.col-md-1					
+					div.col-md-3
 						p Tipo de cuarto
 						div.btn-group#add-property
 							button(data-toggle="dropdown").btn.btn-default.dropdown-toggle 
-								i.fa.fa-users    Compartido
+								i.fa.fa-users			Compartido
 								span.caret
 							ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
 								li
 									a(href='#') 
-										i.fa.fa-user    Privado
-									a(href='#') 
-										i.fa.fa-users       Compartido
-					div.col-md-4
-						p Precio
+										i.fa.fa-user			Privado
+									a(href='#')
+										i.fa.fa-users			Compartido
+					div.col-md-1					
+					div.col-md-3
+						p  Precio
 						div.btn-group#add-property
 							div.input-group
 								span.input-group-addon 
 									strong $
-								input(type="text").form-control(placeholder="10")
-
+								input(type="text").form-control(placeholder="10")#precio
 				div.row.add-property
 					div.col-md-6
 						a.btn.btn-primary(href='')#fotos  
@@ -104,9 +103,9 @@ html
 										this   Agregar Fotos 
 					div.col-md-1
 
-						span Ubicacion
-				div.row
-					div.col-md-6
+						h5 Ubicacion
+				div.row.add-property
+					div.col-md-5
 						div.jumbotron	
 
 							div.jumbotron-photo
@@ -116,8 +115,8 @@ html
 							div#picture
 
 
-					
-					div.col-md-6
+					div.col-md-1
+					div.col-md-5
 						
 						div.location
 							br
@@ -127,6 +126,7 @@ html
 								div.jumbotron-photo	
 									
 									img(src="/imgs/map3.png")
+							
 				div.row.add-property
 					div.col-md-4.roommatebox
 								
@@ -134,24 +134,22 @@ html
 						input(type="text").form-control(placeholder="roommates").add-property
 															
 						a.btn.btn-primary(href='#')#roommates
-							i.fa.fa-envelope    
-							this     Agregar Roommate
+							i.fa.fa-envelope 
+							this   Agregar Roommate
 		
-					div.col-md-6
-						textarea(rows="3").form-control(placeholder="").whitespace
-				div.row.add-property
-					
-					div.row	
-					div.col-md-10
-					div.col-md-1
-						div.overlay
+					div.col-md-8
+						textarea(rows="5").form-control(placeholder="").whitespace
 
-							button.btn.btn-info#add-property 
-								i.fa.fa-building-o    
-								this     Agregar Propiedad
+				div.row.add-property#bottom
+					div.row	
+					div.col-md-9
+					div.col-md-1
+						button.btn.btn-info#add-property 
+							i.fa.fa-building-o 
+								span 			Agregar Propiedad
+				div.row#bottom
 
 							
-								
 
 
 						
