@@ -54,6 +54,13 @@ html
 						button(type="button",data-target="#myModal4",data-toggle="modal").btn.btn-info#user-dashboard
 							i.fa.fa-user    
 								span  Agregar Usuario
+					div.col-md-5
+					div.col-md-2
+						div.input-group#user-list
+							span.input-group-addon#user-list
+								i.fa.fa-search
+							input(type="text").form-control(placeholder="Busqueda")
+
 						div.modal.fade#myModal4(tabindex="-1",role="dialog",aria-labelledby="myModalLabel",aria-hidden=true)
 												div.modal-dialog
 													div.modal-content	
@@ -265,7 +272,7 @@ html
 											button.btn.btn-primary.btn-circle#user-list 
 												i.fa.fa-ban
 							div.panel.panel-footer
-								
+								div.line-separator#property-list
 								div.col-md-4
 								div.pagination#property-list
 									li.active
